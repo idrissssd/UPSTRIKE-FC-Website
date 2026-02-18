@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Frontend</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+      <div class="container">
+        <img src="images/TEAM LOGO.jpeg" width="50px" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-auto" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#Home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#About" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#players" class="nav-link">Players</a>
+            </li>
+            <li class="nav-item">
+              <a href="#club-management-board" class="nav-link">Club</a>
+            </li>
+            <li class="nav-item">
+              <a href="#trophies" class="nav-link">Trophies</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Training" class="nav-link">Training</a>
+            </li>
+            <li class="nav-item">
+              <a href="#facilities" class="nav-link">Playing kits </a>
+            </li>
+            <li class="nav-item">
+              <a href="#Affiliations" class="nav-link">Affiliations</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Photogallery" class="nav-link">Photogallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#ContactInformation" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="join-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#Join"
+          >
+            Joining Club
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="Join"
+      tabindex="-1"
+      aria-labelledby="JoinLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="JoinLabel">Join Club</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <p>Fill the form and submit to the Management</p>
+          </div>
+          <form id="form">
+            <div class="mb-2">
+              <label for="name" class="col-form-label"> Full Name: </label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="mb-2">
+              <label for="email" class="col-form-label"> Email: </label>
+              <input type="text" class="form-control" id="email" />
+            </div>
+            <div class="mb-2">
+              <label for="position" class="col-form-label"> Position: </label>
+              <input type="text" class="form-control" id="position" />
+            </div>
+            <div class="mb-2">
+              <label for="age" class="col-form-label"> Age: </label>
+              <input type="number" class="form-control" id="age" />
+            </div>
+          </form>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Home Section -->
+    <section id="Home" class="home">
+      <div class="container">
+        <h1 class="text-center fw-bold">
+          Welcome To Up-strike <br />Football Club
+        </h1>
+        <p>
+          Our football club is a family united by passion, skill, and pride.
+          Every match tells a story of dedication, teamwork, and unforgettable
+          moments, where dreams take flight and fans share in the magic of the
+          beautiful game.
+        </p>
+        <a href="#ContactInformation" class="hero-btn"> Contact Now → </a>
+      </div>
+    </section>
+
+    <!-- barca style -->
+    <section class="club-stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <h2>2022</h2>
+            <p>Founded</p>
+          </div>
+          <div class="stat">
+            <h2>20+</h2>
+            <p>Players Developed</p>
+          </div>
+          <div class="stat">
+            <h2>3</h2>
+            <p>Major Trophies</p>
+          </div>
+          <div class="stat">
+            <h2>10+</h2>
+            <p>Tournaments Played</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="About">
+      <div class="about">
+        <h1 class="text-center section-tittle fw-bold">ABOUT US</h1>
+        <div class="container">
+          <div class="row g-3 align-items-center">
+            <div class="col-2">
+              <img
+                src="images/julien-rocheblave-F3M8FmvWQo4-unsplash.jpg"
+                class="about-img img-fluid"
+              />
+            </div>
+            <div class="col-2">
+              <h2 class="text-dark text-center fw-bold">Who we Are</h2>
+              <p>
+                Up-strike Football Club was Founded in 2022,Up-strike Football
+                Club is a youth focused football academy based in Abuja,
+                Nigeria. We are dedicated to identifying, developing, and
+                nurturing young football talents through structured training,
+                discipline, and professional guidance.
+              </p>
+              <h2 class="text-dark text-center fw-bold">Our Mission</h2>
+              <small>
+                To develop young football talents through professional coaching
+                and structured training <br />
+                To promote discipline, teamwork, and sportsmanship <br />
+                To provide a safe and supportive football environment <br />
+                To prepare players for competitive football and future
+                opportunities
+              </small>
+            </div>
+            <a class="btn btn-secondary" href="">SEE MORE &#8594; </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- players section -->
+    <section id="players">
+      <div class="players">
+        <h1 class="bg-white section-tittle fw-bold text-center">PLAYERS</h1>
+        <div class="container align-items-center justify-content-center">
+          <div class="row justify-content-center g-4">
+            <div class="col-12 col-md-5">
+              <div class="match-team-box">
+                <h2>⚽U18 Players</h2>
+              </div>
+              <p class="players-list">
+                <span class="player-name">Muhammad Ibrahim -</span>
+                <span class="player-role">Striker</span> <br />
+                <span class="player-name">Mubarak Kasali -</span>
+                <span class="player-role">Left Winger</span> <br />
+                <span class="player-name">Muhammad Abbas -</span>
+                <span class="player-role">Central Midfilder</span> <br />
+                <span class="player-name">Collins Gabriel -</span>
+                <span class="player-role">Right Winger</span> <br />
+                <span class="player-name">Afabwaje Godwill -</span>
+                <span class="player-role">Left Back</span> <br />
+                <span class="player-name">Muhammad .A Jonga-</span>
+                <span class="player-role">Attacking Midfielder</span> <br />
+                <span class="player-name"> Samson Chinagbonm-</span>
+                <span class="player-role">Defensive Midfilder</span> <br />
+                <span class="player-name">Emanuel Nweke -</span>
+                <span class="player-role">Central Midfielder</span> <br />
+                <span class="player-name">Adisa Bashir -</span>
+                <span class="player-role">Goalkeeper</span> <br />
+                <span class="player-name">Okoro Emanuel -</span>
+                <span class="player-role">Left Winger</span> <br />
+                <span class="player-name">Ahmad Ibrahim Kaduna -</span>
+                <span class="player-role">Striker</span> <br />
+                <span class="player-name">Jafar Abdullahi Kaduna -</span>
+                <span class="player-role">Attacking Midfilder</span> <br />
+                <span class="player-name">Abubakar Hamza Kaduna -</span>
+                <span class="player-role">Center Back</span> <br />
+              </p>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="match-team-box">
+                <h2>⚽U15 Players</h2>
+              </div>
+              <p class="players-list">
+                <span class="player-name">Gold Collins -</span>
+                <span class="player-role">Right Back</span> <br />
+                <span class="player-name">Blessed Musa -</span>
+                <span class="player-role">Attacking Midfielder</span> <br />
+                <span class="player-name">Joseph Habila -</span>
+                <span class="player-role">Right Back</span> <br />
+                <span class="player-name">Arinze Ogbod -</span>
+                <span class="player-role">Attacking Midfielder</span> <br />
+                <span class="player-name">Goodstime Joseph -</span>
+                <span class="player-role">Left Back</span> <br />
+                <span class="player-name">Emmanuel Joshua -</span>
+                <span class="player-role">Attacking Midfielder</span> <br />
+                <span class="player-name">Alex Joshua -</span>
+                <span class="player-role">Defensive Midfilder</span> <br />
+                <span class="player-name">Haidar Basaka -</span>
+                <span class="player-role">Left Winger</span> <br />
+                <span class="player-name">Micheal -</span>
+                <span class="player-role">Goalkeeper</span> <br />
+                <span class="player-name">Peter Oche -</span>
+                <span class="player-role">Left Winger</span> <br />
+                <span class="player-name">Bartholome Albert -</span>
+                <span class="player-role">Striker</span> <br />
+                <span class="player-name">Richard Habila -</span>
+                <span class="player-role">Attacking Midfilder</span> <br />
+                <span class="player-name">Uche Nweke -</span>
+                <span class="player-role">Center Back</span> <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Club Management & Board -->
+
+    <section id="club-management-board">
+      <div class="testimonial">
+        <h1 class="team section-tittle fw-bold">CLUB MANAGEMENT & BOARD</h1>
+        <h3 class="text-center">CLUB MANAGEMENT</h3>
+        <div class="card-container">
+          <div class="card-group g-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Head Coach</h5>
+                <p class="card-text">Abubakar Sadeeq</p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Responsible for overall team performance, training
+                    methodology, and player development.</small
+                  >
+                </p>
+                <img src="images/profile.jpeg" class="card-img-top" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Assistant Coach</h5>
+                <p class="card-text">Tafida Abbas</p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    Supports training sessions, match preparation, and tactical
+                    analysis.</small
+                  >
+                </p>
+                <img src="images/profile.jpeg " class="card-img-top" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Goalkeeper Coach</h5>
+                <p class="card-text">Mr. Shegun</p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Ensures that the clubs goalkeepers are technically
+                    excellent, tactically aware, physically ready, and mentally
+                    prepared</small
+                  >
+                </p>
+                <img src="images/profile.jpeg" class="card-img-top" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Health Personel</h5>
+                <p class="card-text">Abbas Tafida</p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Oversees physical conditioning, injury prevention, and
+                    player fitness programs.</small
+                  >
+                </p>
+                <img src="images/profile.jpeg" class="card-img-top" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-center fw-bld p-5">BOARD & ADMINISTRATION</h3>
+        <div class="card-container">
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Club President</h5>
+                <p class="card-text">Dr. Hussaini Basaka</p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Provides strategic leadership and oversees the long-term
+                    vision of the club.</small
+                  >
+                </p>
+                <img src="images/profile.jpeg" class="card-img-top" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Vice President</h5>
+                <p class="card-text">Mr Jacob</p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    Supports club leadership and manages development
+                    initiatives.</small
+                  >
+                </p>
+                <img src="images/profile.jpeg" class="card-img-top" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Secretary</h5>
+                <p class="card-text">Amina Abubakar</p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Responsible for the administration and official
+                    communication of the club.</small
+                  >
+                </p>
+                <img src="images/profile.jpeg" class="card-img-top" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Board Member</h5>
+                <p class="card-text">Haruna Usman Elerica</p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Making big decisions about how the club is run, funded, and
+                    governed</small
+                  >
+                </p>
+                <img src="images/profile.jpeg" class="card-img-top" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trophies,Competitions & Success -->
+    <section id="trophies">
+      <div class="trophies">
+        <h1 class="text-center section-tittle fw-bold">
+          TROPHIES, COMPETITIONS & SUCCESS
+        </h1>
+        <div class="small-container">
+          <div class="row">
+            <div class="col-2">
+              <h3>COMPETITIONS</h3>
+              <p>N-Youth Cup</p>
+              <p>Chief Naval staff Cup</p>
+              <p>AMAC Tournament</p>
+              <p>National League II</p>
+              <p>Elite League</p>
+            </div>
+            <div class="col-2">
+              <h3>TROPHIES</h3>
+              <p>Won N-Youth Cup 2022</p>
+              <p>Won AMAC U15 2023</p>
+              <p>Won Chief Naval Cup U15 2023</p>
+            </div>
+            <div class="col-2">
+              <h3>SUCCESS</h3>
+              <p>
+                Up-strike Football Club is proud of it's strong player
+                development pathway, which has seen several of our players
+                progress to professional football.
+              </p>
+              <p>*Kingsley Micheal- Currently playing in Tunisia.</p>
+              <p>
+                *Emmanuel Denis- has played at Club brugge also Played for Super
+                Eagles.
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <p class="px-5 text-center"></p>
+      </div>
+    </section>
+
+    <!-- Training -->
+    <section id="Training">
+      <div class="about">
+        <h1 class="text-center section-tittle fw-bold">
+          TRAINING <br />
+          PHILOSOPHY
+        </h1>
+        <div class="container">
+          <div class="row g-3 align-items-center">
+            <div class="col-2">
+              <p>
+                At Up-strike Football Club, our training philosophy is built on
+                development, discipline, and excellence. We focus on nurturing
+                players holistically,technically, tactically, physically, and
+                mentally.While instilling strong values on and off the pitch.
+                <br />
+                <br />
+                Our training programs emphasize technical mastery, intelligent
+                decision making, and game understanding, ensuring players are
+                confident and effective in real match situations. We believe in
+                structured, age-appropriate training sessions that promote
+                creativity, teamwork, and adaptability. <br />
+                <br />
+                Physical conditioning and injury prevention are key components
+                of our philosophy, supported by professional fitness programs
+                tailored to each players development stage. Equally important is
+                mental strength, where players are taught resilience, focus, and
+                leadership.
+              </p>
+            </div>
+            <div class="col-2">
+              <img
+                src="images/michael-c-ifRkVm7fxag-unsplash.jpg"
+                class="about-img img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playing kit & Facilities -->
+    <section id="facilities">
+      <div class="facilities">
+        <h1 class="text-center section-tittle fw-bold">
+          PLAYING KITS & FACILITIES
+        </h1>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="images/HOME JERSY (2).jpeg" class="card-img-top" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Home Jersey</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="images/AWAY JERSY.jpeg" class="card-img-top" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Away Jersey</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="images/bibs.png" class="card-img-top" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Bibs & Ball</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="images/CONESss (2).jpeg" class="card-img-top" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Cones</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Affiliations -->
+    <section id="Affiliations">
+      <div class="Affiliations">
+        <div class="container">
+          <div class="row g-3 p-5 g-md-4">
+            <div class="col">
+              <img src="images/Nff.jpeg" />
+            </div>
+            <div class="col">
+              <img src="images/FCT-FA Logo.jpg.jpeg" />
+            </div>
+            <div class="col">
+              <img src="images/FIFA Logo.jpg.jpeg" />
+            </div>
+
+            <div class="col">
+              <img src="images/CAC Logo.jpg.jpeg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="Photogallery">
+      <div class="Photogallery">
+        <h1 class="fw-bold section-tittle text-center">PHOTOGALLERY</h1>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="images/U18 T.jpeg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">U18 Team</h5>
+                  <p class="card-text">
+                    Representing our academy with pride and determination during
+                    the Abuja Football League (AFL) 2023 season.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/U 15 team.jpeg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">U15 Team</h5>
+                  <p class="card-text">
+                    One team. One vision. One future — our U15 squad united in
+                    diversity and determination.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/with the coach.jpeg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">With The Coach</h5>
+                  <p class="card-text">
+                    Our players alongside the coach, proudly wearing
+                    Emzor-sponsored jerseys, representing discipline,
+                    leadership, and team unity
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/scout.jpeg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Scout at National Stadium</h5>
+                  <p class="card-text">
+                    Talent identification session at the National Stadium,
+                    providing our players with the opportunity to showcase their
+                    skills on a bigger stage.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/U15 TT.jpeg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">U15 Team</h5>
+                  <p class="card-text">
+                    Our U15 squad showcasing talent, teamwork, and discipline
+                    during the AMAC Youth Tournament.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/U 18 TT.jpeg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">U18 Team</h5>
+                  <p class="card-text">
+                    Focused and prepared during pre-season 2025, building
+                    strength and strategy for the upcoming campaign.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact information -->
+    <section id="ContactInformation" class="contact-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Official Contact Information</h2>
+          <p class="contact-subtittle">
+            For partnerships, player registration, sponsorship inquiries, or
+            general information, reach out to us through the details below.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <ul class="list-group list-group-flush shadow-sm">
+              <li class="list-group-item py-3">
+                <strong>Email Address:</strong> upstrikefc@gmail.com
+              </li>
+              <li class="list-group-item py-3">
+                <strong>Phone / WhatsApp:</strong> +234 906 119 8277
+              </li>
+              <li class="list-group-item py-3">
+                <strong>Club Location:</strong> Abuja, Nigeria
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- social media -->
+    <div class="media">
+      <div class="container">
+        <div class="social">
+          <h5 class="text-white">Follow Up Strike FC on Social Media</h5>
+          <div class="social-icons">
+            <a href="#" class="me-3" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="me-3" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+
+            <a href="#" class="me-3" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <div
+            class="container d-flex flex-column align-items-center text-center"
+          >
+            <p class="text-center">
+              Copyright © 2026 Upstrike Football Club. Developing talent.
+              Shaping the future. All rights reserved.
+            </p>
+            <a
+              href="#Home"
+              class="back-to-top ms-lg-3"
+              aria-label="Back to top"
+            >
+              <i class="bi bi-arrow-up-short"></i>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
